@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-i18n-key="htmlLang" data-i18n-target-attr="lang">
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="TpjAt1BfuU8xOPBwmHlf3kNjX190WzO31WATOvB6Ctg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Updated Description for SEO -->
-    <meta name="description" content="Portfólio de Pedro Henrique Braga, Desenvolvedor Fullstack Pleno com mais de 5 anos de experiência, especializado em .NET, C#, Angular, Python, SQL Server e Azure DevOps.">
+    <meta name="description" content="Portfólio de Pedro Henrique Braga, Desenvolvedor Fullstack Pleno com mais de 5 anos de experiência, especializado em .NET, C#, Angular, Python, SQL Server e Azure DevOps." data-i18n-key="metaDescription" data-i18n-target-attr="content">
     <meta name="author" content="Pedro Henrique Braga">
     <!-- Placeholder: Favicon - Crie seu próprio favicon.ico e coloque na raiz -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="./index.js"></script>
-    <title>Pedro Henrique Braga | Desenvolvedor Fullstack Pleno</title>
+    <title data-i18n-key="pageTitle">Pedro Henrique Braga | Desenvolvedor Fullstack Pleno</title>
 
     <style>
       /* Import Fonts and Icons */
@@ -80,10 +80,11 @@
 
         <!-- Desktop Menu -->
         <ul class="hidden md:flex space-x-8">
-          <li><a href="#about" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium">Sobre</a></li>
-          <li><a href="#projects" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium">Projetos</a></li>
-          <li><a href="#experience" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium">Experiência</a></li>
-          <li><a href="#contact" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium">Contato</a></li>
+          <li><a href="#about" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium" data-i18n-key="nav.about">Sobre</a></li>
+          <li><a href="#projects" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium" data-i18n-key="nav.projects">Projetos</a></li>
+          <li><a href="#experience" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium" data-i18n-key="nav.experience">Experiência</a></li>
+          <li><a href="#contact" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium" data-i18n-key="nav.contact">Contato</a></li>
+          <li><button id="language-toggle" class="text-white hover:text-primary-200 transition-colors duration-300 font-medium bg-primary-700 hover:bg-primary-800 px-3 py-1 rounded-md">EN</button></li>
         </ul>
 
         <!-- Mobile Menu Button -->
@@ -102,10 +103,11 @@
              </button>
          </div>
           <ul class="flex flex-col space-y-6">
-            <li><a href="#about" class="text-white hover:text-primary-200 block py-2 text-lg font-medium mobile-menu-link">Sobre</a></li>
-            <li><a href="#projects" class="text-white hover:text-primary-200 block py-2 text-lg font-medium mobile-menu-link">Projetos</a></li>
-            <li><a href="#experience" class="text-white hover:text-primary-200 block py-2 text-lg font-medium mobile-menu-link">Experiência</a></li>
-            <li><a href="#contact" class="text-white hover:text-primary-200 block py-2 text-lg font-medium mobile-menu-link">Contato</a></li>
+            <li><a href="#about" class="text-white hover:text-primary-200 block py-2 text-lg font-medium mobile-menu-link" data-i18n-key="nav.about">Sobre</a></li>
+            <li><a href="#projects" class="text-white hover:text-primary-200 block py-2 text-lg font-medium mobile-menu-link" data-i18n-key="nav.projects">Projetos</a></li>
+            <li><a href="#experience" class="text-white hover:text-primary-200 block py-2 text-lg font-medium mobile-menu-link" data-i18n-key="nav.experience">Experiência</a></li>
+            <li><a href="#contact" class="text-white hover:text-primary-200 block py-2 text-lg font-medium mobile-menu-link" data-i18n-key="nav.contact">Contato</a></li>
+            <li class="mt-4"><button id='language-toggle-mobile' class="text-white hover:text-primary-200 block py-2 text-lg font-medium bg-primary-700 hover:bg-primary-800 px-4 rounded-md w-full text-center">EN</button></li>
           </ul>
       </div>
 
@@ -118,19 +120,19 @@
               <!-- Text Content -->
               <div class="md:w-3/5 lg:w-1/2 text-center md:text-left" data-aos="fade-right">
                   <!-- Animated Title -->
-                  <h1 id="hero-title" class="text-4xl sm:text-5xl font-bold mb-5 text-primary-800 leading-tight">Olá! Eu sou Pedro Henrique Braga...</h1> <!-- Text updated by TypeIt -->
-                  <h2 class="text-2xl sm:text-3xl mb-4 text-gray-700 font-title">Desenvolvedor Fullstack Pleno</h2>
+                  <h1 id="hero-title" class="text-4xl sm:text-5xl font-bold mb-5 text-primary-800 leading-tight"></h1>
+                  <h2 class="text-2xl sm:text-3xl mb-4 text-gray-700 font-title" data-i18n-key="hero.role">Desenvolvedor Fullstack Pleno</h2>
                   <!-- Personal Description from CV -->
-                  <p class="text-lg sm:text-xl mb-8 text-gray-600 max-w-xl mx-auto md:mx-0">
+                  <p class="text-lg sm:text-xl mb-8 text-gray-600 max-w-xl mx-auto md:mx-0" data-i18n-key="hero.description">
                       Profissional com mais de 5 anos de experiência em desenvolvimento de softwares, atuando em backend e frontend (fullstack). Foco em criar soluções robustas, escaláveis e com código de qualidade utilizando tecnologias modernas.
                   </p>
                   <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
                       <!-- Link to contact -->
-                      <a href="#contact" class="px-6 py-3 bg-primary-600 text-white rounded-lg shadow-md hover:bg-primary-700 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 flex items-center justify-center font-medium text-lg">
+                      <a  href="#contact" class="px-6 py-3 bg-primary-600 text-white rounded-lg shadow-md hover:bg-primary-700 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 flex items-center justify-center font-medium text-lg" data-i18n-key="hero.contactButton">
                           Entre em Contato
                       </a>
-                      
-                      <a href="files/CV-PedroHenriqueBraga.pdf" target="_blank" download="CV-PedroHenriqueBraga.pdf" class="px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex items-center justify-center font-medium text-lg">
+
+                      <a id="cv-download-link" href="files/CV-PedroHenriqueBraga.pdf" target="_blank" download="CV-PedroHenriqueBraga.pdf" class="px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex items-center justify-center font-medium text-lg" data-i18n-key="hero.cvButton">
                           Download CV <span class="material-symbols-outlined ml-2 text-xl">download</span>
                       </a>
                   </div>
@@ -161,20 +163,20 @@
     <!-- About Section -->
     <section id="about" class="py-20 md:py-28 px-6 md:px-12 bg-white">
       <div class="container mx-auto">
-          <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up">Sobre Mim</h2>
+          <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up" data-i18n-key="about.title">Sobre Mim</h2>
           <div class="flex flex-col lg:flex-row items-start gap-12 md:gap-16">
               <!-- About Text & Skills -->
               <div class="lg:w-1/2" data-aos="fade-right" data-aos-delay="100">
                   <!-- Text based on CV Summary -->
-                  <h3 class="text-2xl font-semibold text-primary-700 mb-4">Quem sou eu?</h3>
-                  <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                  <h3 class="text-2xl font-semibold text-primary-700 mb-4" data-i18n-key="about.who">Quem sou eu?</h3>
+                  <p class="text-lg mb-4 text-gray-700 leading-relaxed" data-i18n-key="about.p1">
                       Sou um Desenvolvedor Fullstack com mais de 5 anos de experiência, apaixonado por construir e otimizar aplicações web, atuando tanto no backend quanto no frontend. Minha principal expertise reside no ecossistema .NET (Core e Framework) com C#, e em bancos de dados relacionais como SQL Server.
                   </p>
-                  <p class="text-lg mb-8 text-gray-700 leading-relaxed">
+                  <p class="text-lg mb-8 text-gray-700 leading-relaxed" data-i18n-key="about.p2">
                       Possuo sólida vivência com arquiteturas como MVC, MVVM e CQRS, e sou proficiente em tecnologias web modernas, incluindo JavaScript, TypeScript, e frameworks como Angular e React. Tenho experiência prática com ferramentas DevOps como Azure DevOps, Docker, Git e Heroku, buscando sempre entregar soluções eficientes, escaláveis e de alta performance. Atualmente cursando Análise e Desenvolvimento de Sistemas no IBMR e com formação Técnica em Informática pelo Cefet/RJ.
                   </p>
 
-                  <h3 class="text-xl font-semibold mb-4 text-primary-700 mt-8">Principais Conhecimentos Técnicos:</h3>
+                  <h3 class="text-xl font-semibold mb-4 text-primary-700 mt-8" data-i18n-key="about.skillsTitle">Principais Conhecimentos Técnicos:</h3>
                    <!-- Skills from CV -->
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
                       <div class="flex items-center p-2 rounded hover:bg-primary-50 transition-colors duration-200">
@@ -214,57 +216,57 @@
                           <span class="material-symbols-outlined text-primary-600 mr-2 text-xl">design_services</span> <span class="text-gray-800 font-medium">Figma</span>
                       </div>
                   </div>
-                   <h3 class="text-xl font-semibold mb-4 text-primary-700 mt-8">Idiomas:</h3>
+                   <h3 class="text-xl font-semibold mb-4 text-primary-700 mt-8" data-i18n-key="about.languagesTitle">Idiomas:</h3>
                    <div class="flex items-center p-2 rounded hover:bg-primary-50 transition-colors duration-200">
-                          <span class="material-symbols-outlined text-primary-600 mr-2 text-xl">translate</span> <span class="text-gray-800 font-medium">Inglês Intermediário</span>
+                          <span class="material-symbols-outlined text-primary-600 mr-2 text-xl">translate</span> <span class="text-gray-800 font-medium" data-i18n-key="about.langEnglish">Inglês Intermediário</span>
                    </div>
               </div>
               <!-- Services -->
               <div class="lg:w-1/2" data-aos="fade-left" data-aos-delay="200">
                   <div class="bg-gray-50 p-6 md:p-8 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300 h-full">
-                      <h3 class="text-xl font-semibold mb-5 text-primary-700">Como Posso Ajudar (Serviços Freelancer)</h3>
+                      <h3 class="text-xl font-semibold mb-5 text-primary-700" data-i18n-key="about.servicesTitle">Como Posso Ajudar (Serviços Freelancer)</h3>
                        <!-- Generic services list, aligned with skills -->
                       <ul class="space-y-4">
                           <li class="flex items-start p-2 rounded hover:bg-gray-100 transition-colors duration-200">
                               <span class="material-symbols-outlined text-primary-600 mr-3 mt-1 flex-shrink-0">check_circle</span>
                               <div>
-                                <h4 class="font-semibold text-gray-800">Desenvolvimento Fullstack (.NET & Web)</h4>
-                                <p class="text-gray-600 text-sm">Criação de aplicações web completas (backend .NET, frontend Angular/React/Vue), APIs RESTful robustas e serviços escaláveis.</p>
+                                <h4 class="font-semibold text-gray-800" data-i18n-key="about.service1.title">Desenvolvimento Fullstack (.NET & Web)</h4>
+                                <p class="text-gray-600 text-sm" data-i18n-key="about.service1.desc">Criação de aplicações web completas (backend .NET, frontend Angular/React/Vue), APIs RESTful robustas e serviços escaláveis.</p>
                               </div>
                           </li>
                           <li class="flex items-start p-2 rounded hover:bg-gray-100 transition-colors duration-200">
                               <span class="material-symbols-outlined text-primary-600 mr-3 mt-1 flex-shrink-0">check_circle</span>
                                <div>
-                                <h4 class="font-semibold text-gray-800">Desenvolvimento e Manutenção de APIs</h4>
-                                <p class="text-gray-600 text-sm">Design, implementação e otimização de APIs RESTful seguras e performáticas utilizando ASP.NET Core.</p>
+                                <h4 class="font-semibold text-gray-800" data-i18n-key="about.service2.title">Desenvolvimento e Manutenção de APIs</h4>
+                                <p class="text-gray-600 text-sm" data-i18n-key="about.service2.desc">Design, implementação e otimização de APIs RESTful seguras e performáticas utilizando ASP.NET Core.</p>
                               </div>
                           </li>
                           <li class="flex items-start p-2 rounded hover:bg-gray-100 transition-colors duration-200">
                               <span class="material-symbols-outlined text-primary-600 mr-3 mt-1 flex-shrink-0">check_circle</span>
                                <div>
-                                <h4 class="font-semibold text-gray-800">Integração de Sistemas</h4>
-                                <p class="text-gray-600 text-sm">Conexão eficiente entre diferentes plataformas, sistemas legados e serviços de terceiros via APIs, web services ou mensageria.</p>
+                                <h4 class="font-semibold text-gray-800" data-i18n-key="about.service3.title">Integração de Sistemas</h4>
+                                <p class="text-gray-600 text-sm" data-i18n-key="about.service3.desc">Conexão eficiente entre diferentes plataformas, sistemas legados e serviços de terceiros via APIs, web services ou mensageria.</p>
                               </div>
                           </li>
                            <li class="flex items-start p-2 rounded hover:bg-gray-100 transition-colors duration-200">
                               <span class="material-symbols-outlined text-primary-600 mr-3 mt-1 flex-shrink-0">check_circle</span>
                                <div>
-                                <h4 class="font-semibold text-gray-800">Automação e Ferramentas Internas</h4>
-                                <p class="text-gray-600 text-sm">Desenvolvimento de scripts (especialmente com Python) e ferramentas customizadas para otimizar processos, monitoramento e tarefas repetitivas.</p>
+                                <h4 class="font-semibold text-gray-800" data-i18n-key="about.service4.title">Automação e Ferramentas Internas</h4>
+                                <p class="text-gray-600 text-sm" data-i18n-key="about.service4.desc">Desenvolvimento de scripts (especialmente com Python) e ferramentas customizadas para otimizar processos, monitoramento e tarefas repetitivas.</p>
                               </div>
                           </li>
                            <li class="flex items-start p-2 rounded hover:bg-gray-100 transition-colors duration-200">
                               <span class="material-symbols-outlined text-primary-600 mr-3 mt-1 flex-shrink-0">check_circle</span>
                                <div>
-                                <h4 class="font-semibold text-gray-800">Desenvolvimento Frontend Moderno</h4>
-                                <p class="text-gray-600 text-sm">Criação de interfaces de usuário ricas e interativas utilizando Angular, React, Vue.js, TypeScript, HTML5, CSS3 e Bootstrap.</p>
+                                <h4 class="font-semibold text-gray-800" data-i18n-key="about.service5.title">Desenvolvimento Frontend Moderno</h4>
+                                <p class="text-gray-600 text-sm" data-i18n-key="about.service5.desc">Criação de interfaces de usuário ricas e interativas utilizando Angular, React, Vue.js, TypeScript, HTML5, CSS3 e Bootstrap.</p>
                               </div>
                           </li>
                            <li class="flex items-start p-2 rounded hover:bg-gray-100 transition-colors duration-200">
                               <span class="material-symbols-outlined text-primary-600 mr-3 mt-1 flex-shrink-0">check_circle</span>
                                <div>
-                                <h4 class="font-semibold text-gray-800">Manutenção e Evolução de Sistemas Legados</h4>
-                                <p class="text-gray-600 text-sm">Melhoria contínua, refatoração, correção de bugs e adição de novas funcionalidades a sistemas .NET (Framework/Core) e web existentes.</p>
+                                <h4 class="font-semibold text-gray-800" data-i18n-key="about.service6.title">Manutenção e Evolução de Sistemas Legados</h4>
+                                <p class="text-gray-600 text-sm" data-i18n-key="about.service6.desc">Melhoria contínua, refatoração, correção de bugs e adição de novas funcionalidades a sistemas .NET (Framework/Core) e web existentes.</p>
                               </div>
                           </li>
                       </ul>
@@ -277,8 +279,8 @@
     <!-- Projects Section -->
     <section id="projects" class="py-20 md:py-28 px-6 md:px-12 bg-primary-50">
       <div class="container mx-auto">
-          <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up">Projetos em Destaque</h2>
-          <p class="text-center text-gray-600 mb-12 -mt-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="50">
+          <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up" data-i18n-key="projects.title">Projetos em Destaque</h2>
+          <p class="text-center text-gray-600 mb-12 -mt-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="50" data-i18n-key="projects.description">
               Aqui estão alguns exemplos de projetos que desenvolvi ou participei. Clique em "Ver Detalhes" para saber mais. **(Nota: Atualize esta seção com seus próprios projetos pessoais ou exemplos de trabalhos profissionais que possa divulgar).**
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
@@ -291,9 +293,9 @@
                   </div>
                   <div class="p-6">
                       <!-- {Replace Title with your project 1 title} -->
-                      <h3 class="text-xl font-bold mb-2 text-primary-700">{Seu Projeto Exemplo 1: App Web .NET}</h3>
+                      <h3 class="text-xl font-bold mb-2 text-primary-700" data-i18n-key="projects.card1.title">{Seu Projeto Exemplo 1: App Web .NET}</h3>
                       <!-- {Replace Description with your project 1 short description} -->
-                      <p class="text-gray-600 mb-4 text-sm leading-relaxed">{Breve descrição do seu projeto 1. Ex: Sistema de gerenciamento X para resolver o problema Y, utilizando tecnologias Z.}</p>
+                      <p class="text-gray-600 mb-4 text-sm leading-relaxed" data-i18n-key="projects.card1.description">{Breve descrição do seu projeto 1. Ex: Sistema de gerenciamento X para resolver o problema Y, utilizando tecnologias Z.}</p>
                       <!-- {Replace Tech Tags with your project 1 technologies} -->
                       <div class="flex flex-wrap gap-2 mb-4">
                           <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">.NET Core</span>
@@ -304,7 +306,7 @@
                      <a href="javascript:void(0);"
                              data-modal-target="#project1-modal"
                              class="open-modal-button text-primary-600 font-medium flex items-center hover:text-primary-800 transition-colors group/link">
-                              Ver Detalhes <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                              <span data-i18n-key="projects.viewDetails">Ver Detalhes</span> <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
                       </a>
                   </div>
               </div>
@@ -318,9 +320,9 @@
                   </div>
                   <div class="p-6">
                        <!-- {Replace Title with your project 2 title} -->
-                      <h3 class="text-xl font-bold mb-2 text-primary-700">{Seu Projeto Exemplo 2: Ferramenta Python}</h3>
+                      <h3 class="text-xl font-bold mb-2 text-primary-700" data-i18n-key="projects.card2.title">{Seu Projeto Exemplo 2: Ferramenta Python}</h3>
                        <!-- {Replace Description with your project 2 short description} -->
-                      <p class="text-gray-600 mb-4 text-sm leading-relaxed">{Breve descrição do seu projeto 2. Ex: Script de automação para tarefa X ou dashboard de monitoramento Y.}</p>
+                      <p class="text-gray-600 mb-4 text-sm leading-relaxed" data-i18n-key="projects.card2.description">{Breve descrição do seu projeto 2. Ex: Script de automação para tarefa X ou dashboard de monitoramento Y.}</p>
                        <!-- {Replace Tech Tags with your project 2 technologies} -->
                       <div class="flex flex-wrap gap-2 mb-4">
                           <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Python</span>
@@ -331,7 +333,7 @@
                        <a href="javascript:void(0);"
                              data-modal-target="#project2-modal"
                              class="open-modal-button text-primary-600 font-medium flex items-center hover:text-primary-800 transition-colors group/link">
-                              Ver Detalhes <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                              <span data-i18n-key="projects.viewDetails">Ver Detalhes</span> <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
                           </a>
                   </div>
               </div>
@@ -345,9 +347,9 @@
                   </div>
                   <div class="p-6">
                        <!-- {Replace Title with your project 3 title} -->
-                      <h3 class="text-xl font-bold mb-2 text-primary-700">{Seu Projeto Exemplo 3: Contribuição Open Source/Estudo}</h3>
+                      <h3 class="text-xl font-bold mb-2 text-primary-700" data-i18n-key="projects.card3.title">{Seu Projeto Exemplo 3: Contribuição Open Source/Estudo}</h3>
                        <!-- {Replace Description with your project 3 short description} -->
-                      <p class="text-gray-600 mb-4 text-sm leading-relaxed">{Breve descrição do seu projeto 3. Ex: Estudo de tecnologia X, contribuição para biblioteca Y, ou projeto pessoal Z.}</p>
+                      <p class="text-gray-600 mb-4 text-sm leading-relaxed" data-i18n-key="projects.card3.description">{Breve descrição do seu projeto 3. Ex: Estudo de tecnologia X, contribuição para biblioteca Y, ou projeto pessoal Z.}</p>
                        <!-- {Replace Tech Tags with your project 3 technologies} -->
                       <div class="flex flex-wrap gap-2 mb-4">
                           <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">React.JS</span>
@@ -359,7 +361,7 @@
                        <a href="javascript:void(0);"
                              data-modal-target="#project3-modal"
                              class="open-modal-button text-primary-600 font-medium flex items-center hover:text-primary-800 transition-colors group/link">
-                              Ver Detalhes <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                              <span data-i18n-key="projects.viewDetails">Ver Detalhes</span> <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
                           </a>
                   </div>
               </div>
@@ -369,7 +371,7 @@
           <div class="text-center mt-12 md:mt-16" data-aos="fade-up">
               <!-- Link to GitHub from CV -->
               <a href="https://github.com/pedrohenriquebr" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3 bg-primary-600 text-white rounded-lg shadow-md hover:bg-primary-700 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 font-medium text-lg">
-                  Ver Mais Projetos no GitHub <i class="fa-brands fa-github ml-2"></i>
+                  <span data-i18n-key="projects.moreOnGithub">Ver Mais Projetos no GitHub</span> <i class="fa-brands fa-github ml-2"></i>
               </a>
           </div>
       </div>
@@ -648,7 +650,7 @@
     <!-- Experience Section -->
     <section id="experience" class="py-20 md:py-28 px-6 md:px-12 bg-white relative overflow-hidden">
       <div class="container mx-auto">
-          <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up">Experiência Profissional</h2>
+          <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up" data-i18n-key="experience.title">Experiência Profissional</h2>
           <div class="max-w-3xl mx-auto relative">
               <!-- Timeline Line -->
               <div class="absolute left-3 top-0 h-full w-1 bg-primary-200 rounded ml-[-1.5px]"></div>
@@ -659,25 +661,25 @@
                   <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-primary-600 border-4 border-white shadow transform -translate-x-1/2"></div>
                   <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-primary-200">
                       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
-                          <h3 class="text-xl font-bold text-primary-700 mb-1 sm:mb-0">Desenvolvedor Full Stack Pleno</h3>
-                          <span class="text-gray-500 text-sm font-medium">Jun/23 - Jan/25</span> 
+                          <h3 class="text-xl font-bold text-primary-700 mb-1 sm:mb-0" data-i18n-key="experience.totvs.role">Desenvolvedor Full Stack Pleno</h3>
+                          <span class="text-gray-500 text-sm font-medium" data-i18n-key="experience.totvs.date">Jun/23 - Jan/25</span>
                       </div>
                       <h4 class="text-lg font-medium mb-3 text-gray-700">TOTVS</h4>
                       <ul class="space-y-2 text-gray-600 text-sm sm:text-base leading-relaxed">
                           <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Responsável pela manutenção e melhoria contínua do sistema de folha de pagamento na linha RM, com foco na integração da plataforma com o Feedz.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.totvs.desc1">Responsável pela manutenção e melhoria contínua do sistema de folha de pagamento na linha RM, com foco na integração da plataforma com o Feedz.</span>
                           </li>
                           <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Identifiquei e implementei melhorias nos processos de folha de pagamento, gerando redução de custos.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.totvs.desc2">Identifiquei e implementei melhorias nos processos de folha de pagamento, gerando redução de custos.</span>
                           </li>
                            <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Idealizei e desenvolvi uma ferramenta em Python para gerar dashboards e monitorar o histórico de cobertura de testes unitários, integrando dados diários via API do SonarQube, proporcionando uma visão clara sobre a qualidade do código.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.totvs.desc3">Idealizei e desenvolvi uma ferramenta em Python para gerar dashboards e monitorar o histórico de cobertura de testes unitários, integrando dados diários via API do SonarQube, proporcionando uma visão clara sobre a qualidade do código.</span>
                           </li>
                            <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Melhorei o processo de avaliação de performance do sistema RM, gerando um aumento de 60% na performance para um cliente específico.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.totvs.desc4">Melhorei o processo de avaliação de performance do sistema RM, gerando um aumento de 60% na performance para um cliente específico.</span>
                           </li>
                       </ul>
-                       <p class="text-sm text-gray-500 mt-3"><strong class="font-medium">Tecnologias:</strong> C#, Windows Forms, Python, Angular, .Net framework, Smart View.</p>
+                       <p class="text-sm text-gray-500 mt-3"><strong class="font-medium" data-i18n-key="experience.totvs.tech">Tecnologias:</strong> C#, Windows Forms, Python, Angular, .Net framework, Smart View.</p>
                   </div>
               </div>
 
@@ -687,22 +689,22 @@
                   <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-primary-500 border-4 border-white shadow transform -translate-x-1/2"></div>
                   <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-primary-200">
                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
-                          <h3 class="text-xl font-bold text-primary-700 mb-1 sm:mb-0">Analista de Desenvolvimento Júnior</h3>
-                          <span class="text-gray-500 text-sm font-medium">Mai/22 - Mai/23</span>
+                          <h3 class="text-xl font-bold text-primary-700 mb-1 sm:mb-0" data-i18n-key="experience.target.role">Analista de Desenvolvimento Júnior</h3>
+                          <span class="text-gray-500 text-sm font-medium" data-i18n-key="experience.target.date">Mai/22 - Mai/23</span>
                       </div>
                       <h4 class="text-lg font-medium mb-3 text-gray-700">Target Bank</h4>
                       <ul class="space-y-2 text-gray-600 text-sm sm:text-base leading-relaxed">
                           <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Atuação em processos de manutenção e desenvolvimento de sistemas internos de gestão bancária.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.target.desc1">Atuação em processos de manutenção e desenvolvimento de sistemas internos de gestão bancária.</span>
                           </li>
                           <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Implementação de melhorias no sistema de folha de pagamento.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.target.desc2">Implementação de melhorias no sistema de folha de pagamento.</span>
                           </li>
                           <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Colaboração com a equipe de TI em várias iniciativas.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.target.desc3">Colaboração com a equipe de TI em várias iniciativas.</span>
                           </li>
                       </ul>
-                      <p class="text-sm text-gray-500 mt-3"><strong class="font-medium">Tecnologias:</strong> C#, Xunit, Azure DevOps, JavaScript, .Net Core, Docker, Git, SQL Server.</p>
+                      <p class="text-sm text-gray-500 mt-3"><strong class="font-medium" data-i18n-key="experience.target.tech">Tecnologias:</strong> C#, Xunit, Azure DevOps, JavaScript, .Net Core, Docker, Git, SQL Server.</p>
                   </div>
               </div>
 
@@ -712,19 +714,19 @@
                    <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-primary-400 border-4 border-white shadow transform -translate-x-1/2"></div>
                   <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-primary-200">
                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
-                          <h3 class="text-xl font-bold text-primary-700 mb-1 sm:mb-0">Desenvolvedor Júnior</h3>
-                           <span class="text-gray-500 text-sm font-medium">Jun/21 - Abr/22</span>
+                          <h3 class="text-xl font-bold text-primary-700 mb-1 sm:mb-0" data-i18n-key="experience.3con.role">Desenvolvedor Júnior</h3>
+                           <span class="text-gray-500 text-sm font-medium" data-i18n-key="experience.3con.date">Jun/21 - Abr/22</span>
                       </div>
                       <h4 class="text-lg font-medium mb-3 text-gray-700">3CON</h4>
                       <ul class="space-y-2 text-gray-600 text-sm sm:text-base leading-relaxed">
                            <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Cliente Nokia: Manutenção em sistema de logística utilizando .Net Framework no backend e Angular 8 no frontend. Contribuí com upgrade para o Angular 13. Desenvolvi habilidade de utilizar TFVC.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.3con.desc1">Cliente Nokia: Manutenção em sistema de logística utilizando .Net Framework no backend e Angular 8 no frontend. Contribuí com upgrade para o Angular 13. Desenvolvi habilidade de utilizar TFVC.</span>
                           </li>
                            <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>Cliente MyHive: Desenvolvimento de telas em React no frontend. Tive oportunidade de utilizar Git para controle de código. Primeiro contato com a ferramenta Jira.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.3con.desc2">Cliente MyHive: Desenvolvimento de telas em React no frontend. Tive oportunidade de utilizar Git para controle de código. Primeiro contato com a ferramenta Jira.</span>
                           </li>
                       </ul>
-                       <p class="text-sm text-gray-500 mt-3"><strong class="font-medium">Tecnologias:</strong> C#, TFVC, React.JS, TypeScript, .Net Framework, Angular 2+, Git.</p>
+                       <p class="text-sm text-gray-500 mt-3"><strong class="font-medium" data-i18n-key="experience.3con.tech">Tecnologias:</strong> C#, TFVC, React.JS, TypeScript, .Net Framework, Angular 2+, Git.</p>
                   </div>
               </div>
 
@@ -734,19 +736,19 @@
                    <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-primary-300 border-4 border-white shadow transform -translate-x-1/2"></div>
                   <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-primary-200">
                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
-                          <h3 class="text-xl font-bold text-primary-700 mb-1 sm:mb-0">Técnico Dev. Sistemas Jr / Jovem Aprendiz</h3>
-                           <span class="text-gray-500 text-sm font-medium">Fev/19 - Jun/21</span>
+                          <h3 class="text-xl font-bold text-primary-700 mb-1 sm:mb-0" data-i18n-key="experience.nokia.role">Técnico Dev. Sistemas Jr / Jovem Aprendiz</h3>
+                           <span class="text-gray-500 text-sm font-medium" data-i18n-key="experience.nokia.date">Fev/19 - Jun/21</span>
                       </div>
                       <h4 class="text-lg font-medium mb-3 text-gray-700">Nokia do Brasil</h4>
                       <ul class="space-y-2 text-gray-600 text-sm sm:text-base leading-relaxed">
                            <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>(Téc. Dev. Jr: Out/20 - Jun/21) Desenvolvimento de ferramentas para controle de horas extras e outras ocorrências com Javascript, HTML5 e CSS3, visando otimização de processos administrativos.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.nokia.desc1">(Téc. Dev. Jr: Out/20 - Jun/21) Desenvolvimento de ferramentas para controle de horas extras e outras ocorrências com Javascript, HTML5 e CSS3, visando otimização de processos administrativos.</span>
                           </li>
                           <li class="flex items-start">
-                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span>(Jovem Aprendiz: Fev/19 - Out/20) Desenvolvimento Full Stack com Node e VueJS.</span>
+                              <span class="material-symbols-outlined text-primary-600 mr-2 mt-1 text-lg flex-shrink-0">navigate_next</span> <span data-i18n-key="experience.nokia.desc2">(Jovem Aprendiz: Fev/19 - Out/20) Desenvolvimento Full Stack com Node e VueJS.</span>
                           </li>
                       </ul>
-                      <p class="text-sm text-gray-500 mt-3"><strong class="font-medium">Tecnologias (combinadas):</strong> JavaScript, Node.JS, HTML, CSS, SQL Server, Python, TypeScript, .NET Framework, Vue.JS.</p>
+                      <p class="text-sm text-gray-500 mt-3"><strong class="font-medium" data-i18n-key="experience.nokia.tech">Tecnologias (combinadas):</strong> JavaScript, Node.JS, HTML, CSS, SQL Server, Python, TypeScript, .NET Framework, Vue.JS.</p>
                   </div>
               </div>
 
@@ -754,47 +756,47 @@
 
            <!-- Education -->
             <div class="mt-16 max-w-3xl mx-auto" data-aos="fade-up">
-                 <h3 class="text-2xl font-bold mb-6 text-center text-primary-800">Formação</h3>
+                 <h3 class="text-2xl font-bold mb-6 text-center text-primary-800" data-i18n-key="education.title">Formação</h3>
                  <div class="space-y-6">
                      <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                         <h4 class="font-semibold text-lg text-primary-700">Análise e Desenvolvimento de Sistemas</h4>
-                         <p class="text-gray-600">Centro Universitário IBMR</p>
-                         <p class="text-sm text-gray-500">Concluído: Fev/25</p>
+                         <h4 class="font-semibold text-lg text-primary-700" data-i18n-key="education.ads.degree">Análise e Desenvolvimento de Sistemas</h4>
+                         <p class="text-gray-600" data-i18n-key="education.ads.institution">Centro Universitário IBMR</p>
+                         <p class="text-sm text-gray-500" data-i18n-key="education.ads.status">Concluído: Fev/25</p>
                      </div>
                       <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
-                         <h4 class="font-semibold text-lg text-primary-700">Técnico em Informática</h4>
-                         <p class="text-gray-600">Cefet/RJ</p>
-                         <p class="text-sm text-gray-500">Concluído: Fev/18</p>
+                         <h4 class="font-semibold text-lg text-primary-700" data-i18n-key="education.tech.degree">Técnico em Informática</h4>
+                         <p class="text-gray-600" data-i18n-key="education.tech.institution">Cefet/RJ</p>
+                         <p class="text-sm text-gray-500" data-i18n-key="education.tech.status">Concluído: Fev/18</p>
                      </div>
                  </div>
             </div>
 
              <!-- Extracurricular Courses -->
             <div class="mt-16 max-w-3xl mx-auto" data-aos="fade-up">
-                 <h3 class="text-2xl font-bold mb-6 text-center text-primary-800">Cursos Extracurriculares</h3>
+                 <h3 class="text-2xl font-bold mb-6 text-center text-primary-800" data-i18n-key="courses.title">Cursos Extracurriculares</h3>
                  <div class="space-y-4">
                      <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 flex items-center">
                          <span class="material-symbols-outlined text-primary-600 mr-3 text-xl">school</span>
                          <div>
-                            <p class="font-medium text-gray-800">SOLID com C#: princípios da programação orientada a objetos - Alura (Jun/22)</p>
+                            <p class="font-medium text-gray-800" data-i18n-key="courses.solid">SOLID com C#: princípios da programação orientada a objetos - Alura (Jun/22)</p>
                          </div>
                      </div>
                       <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 flex items-center">
                          <span class="material-symbols-outlined text-primary-600 mr-3 text-xl">school</span>
                          <div>
-                             <p class="font-medium text-gray-800">Building Web APIs with ASP.NET Core in .NET 6 - LinkedIn (Mar/22)</p>
+                             <p class="font-medium text-gray-800" data-i18n-key="courses.api">Building Web APIs with ASP.NET Core in .NET 6 - LinkedIn (Mar/22)</p>
                          </div>
                      </div>
                       <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 flex items-center">
                           <span class="material-symbols-outlined text-primary-600 mr-3 text-xl">school</span>
                          <div>
-                             <p class="font-medium text-gray-800">Introdução ao Git e ao GitHub - DIO (Mai/21)</p>
+                             <p class="font-medium text-gray-800" data-i18n-key="courses.git">Introdução ao Git e ao GitHub - DIO (Mai/21)</p>
                          </div>
                      </div>
                      <div class="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 flex items-center">
                          <span class="material-symbols-outlined text-primary-600 mr-3 text-xl">school</span>
                          <div>
-                             <p class="font-medium text-gray-800">Desenvolvimento avançado com JavaScript ES6 - DIO (Abr/21)</p>
+                             <p class="font-medium text-gray-800" data-i18n-key="courses.es6">Desenvolvimento avançado com JavaScript ES6 - DIO (Abr/21)</p>
                          </div>
                      </div>
                  </div>
@@ -806,33 +808,33 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 md:py-28 px-6 md:px-12 bg-gradient-to-br from-primary-50 to-white">
       <div class="container mx-auto">
-          <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up">Vamos Conversar?</h2>
+          <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up" data-i18n-key="contact.title">Vamos Conversar?</h2>
           <div class="flex flex-col lg:flex-row gap-12 md:gap-16 max-w-5xl mx-auto">
               <!-- Contact Info -->
               <div class="lg:w-1/2" data-aos="fade-right">
-                  <h3 class="text-2xl font-semibold mb-5 text-primary-700">Entre em Contato</h3>
+                  <h3 class="text-2xl font-semibold mb-5 text-primary-700" data-i18n-key="contact.reachOut">Entre em Contato</h3>
                   <!-- Contact text -->
-                  <p class="text-gray-600 mb-8 leading-relaxed text-lg">
+                  <p class="text-gray-600 mb-8 leading-relaxed text-lg" data-i18n-key="contact.p1">
                       Estou sempre aberto a novas oportunidades de freelancer, projetos desafiadores e colaborações interessantes. Se você tem uma ideia, precisa de um desenvolvedor fullstack experiente com foco em .NET e tecnologias web, ou apenas quer trocar uma ideia sobre desenvolvimento, sinta-se à vontade para me contatar!
                   </p>
                   <div class="space-y-5 mb-10">
                       <!-- Email from CV -->
                       <div class="flex items-center group">
                           <span class="material-symbols-outlined text-primary-600 mr-4 text-2xl">mail</span>
-                          <a href="mailto:pedrohenriquebraga735@gmail.com" class="text-gray-700 hover:text-primary-600 transition-colors group-hover:underline text-lg break-all">pedrohenriquebraga735@gmail.com</a>
+                          <a href="mailto:pedrohenriquebraga735@gmail.com" class="text-gray-700 hover:text-primary-600 transition-colors group-hover:underline text-lg break-all" data-i18n-key="contact.email">pedrohenriquebraga735@gmail.com</a>
                       </div>
                       <!-- Phone/Whatsapp from CV -->
                        <div class="flex items-center group">
                           <span class="material-symbols-outlined text-primary-600 mr-4 text-2xl">call</span>
-                          <a href="https://wa.me/5521990203702" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary-600 transition-colors group-hover:underline text-lg">+55 (21) 99020-3702 (WhatsApp)</a>
+                          <a href="https://wa.me/5521990203702" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary-600 transition-colors group-hover:underline text-lg" data-i18n-key="contact.phone">+55 (21) 99020-3702 (WhatsApp)</a>
                       </div>
                       <!-- Location from CV -->
                       <div class="flex items-center">
                           <span class="material-symbols-outlined text-primary-600 mr-4 text-2xl">location_on</span>
-                          <span class="text-gray-700 text-lg">Rio de Janeiro, RJ - Disponível para trabalho remoto</span>
+                          <span class="text-gray-700 text-lg" data-i18n-key="contact.location">Rio de Janeiro, RJ - Disponível para trabalho remoto</span>
                       </div>
                   </div>
-                  <h3 class="text-xl font-semibold mb-4 text-primary-700">Conecte-se Comigo</h3>
+                  <h3 class="text-xl font-semibold mb-4 text-primary-700" data-i18n-key="contact.connect">Conecte-se Comigo</h3>
                   <div class="flex space-x-4">
                       <!-- Social Links from CV -->
                       <a href="https://www.linkedin.com/in/pedrohbr/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-primary-100 hover:text-primary-700 hover:scale-110 transition-all duration-300 transform shadow">
@@ -847,25 +849,25 @@
               <div class="lg:w-1/2" data-aos="fade-left" data-aos-delay="100">
                   <form action="https://formspree.io/f/mzzeyznr" method="POST" class="bg-white p-6 md:p-8 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300 transform">
                       <div class="mb-5">
-                          <label for="name" class="block text-gray-700 mb-2 font-medium">Nome <span class="text-red-500">*</span></label>
-                          <input type="text" id="name" name="name" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all hover:border-primary-300 text-lg" placeholder="Seu nome completo"/>
+                          <label for="name" class="block text-gray-700 mb-2 font-medium" data-i18n-key="contact.form.nameLabel">Nome <span class="text-red-500">*</span></label>
+                          <input type="text" id="name" name="name" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all hover:border-primary-300 text-lg" placeholder="Seu nome completo" data-i18n-key="contact.form.namePlaceholder" data-i18n-target-attr="placeholder"/>
                       </div>
                       <div class="mb-5">
-                          <label for="email" class="block text-gray-700 mb-2 font-medium">Email <span class="text-red-500">*</span></label>
-                          <input type="email" id="email" name="email" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all hover:border-primary-300 text-lg" placeholder="seu.email@exemplo.com"/>
+                          <label for="email" class="block text-gray-700 mb-2 font-medium" data-i18n-key="contact.form.emailLabel">Email <span class="text-red-500">*</span></label>
+                          <input type="email" id="email" name="email" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all hover:border-primary-300 text-lg" placeholder="seu.email@exemplo.com" data-i18n-key="contact.form.emailPlaceholder" data-i18n-target-attr="placeholder"/>
                       </div>
                       <div class="mb-5">
-                          <label for="subject" class="block text-gray-700 mb-2 font-medium">Assunto</label>
-                          <input type="text" id="subject" name="subject" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all" placeholder="Ex: Oportunidade Freelancer, Proposta de Projeto"/>
+                          <label for="subject" class="block text-gray-700 mb-2 font-medium" data-i18n-key="contact.form.subjectLabel">Assunto</label>
+                          <input type="text" id="subject" name="subject" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all" placeholder="Ex: Oportunidade Freelancer, Proposta de Projeto" data-i18n-key="contact.form.subjectPlaceholder" data-i18n-target-attr="placeholder"/>
                       </div>
                       <div class="mb-6">
-                          <label for="message" class="block text-gray-700 mb-2 font-medium">Mensagem <span class="text-red-500">*</span></label>
-                          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all hover:border-primary-300 resize-none text-lg" placeholder="Digite sua mensagem aqui..."></textarea>
+                          <label for="message" class="block text-gray-700 mb-2 font-medium" data-i18n-key="contact.form.messageLabel">Mensagem <span class="text-red-500">*</span></label>
+                          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all hover:border-primary-300 resize-none text-lg" placeholder="Digite sua mensagem aqui..." data-i18n-key="contact.form.messagePlaceholder" data-i18n-target-attr="placeholder"></textarea>
                       </div>
-                      <button type="submit" class="w-full px-6 py-3 bg-primary-600 text-white rounded-lg shadow-md hover:bg-primary-700 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative overflow-hidden font-medium text-lg">
+                      <button type="submit" class="w-full px-6 py-3 bg-primary-600 text-white rounded-lg shadow-md hover:bg-primary-700 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 relative overflow-hidden font-medium text-lg" data-i18n-key="contact.form.sendButton">
                           Enviar Mensagem <span class="material-symbols-outlined ml-2 text-xl relative top-[3px]">send</span>
                       </button>
-                      <p class="text-xs text-gray-500 mt-4 text-center">Este formulário usa Formspree. <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary-600">Saiba mais</a>.</p>
+                      <p class="text-xs text-gray-500 mt-4 text-center"><span data-i18n-key="contact.form.spreeInfo">Este formulário usa Formspree.</span> <a href="https://formspree.io/" target="_blank" rel="noopener noreferrer" class="underline hover:text-primary-600" data-i18n-key="contact.form.spreeLearnMore">Saiba mais</a>.</p>
                   </form>
               </div>
           </div>
@@ -876,8 +878,8 @@
     <footer class="py-8 px-6 md:px-8 bg-gray-800 text-gray-400 text-center">
         <div class="container mx-auto">
             <!-- Copyright -->
-            <p class="text-sm">© 2024 Pedro Henrique Braga. Todos os direitos reservados.</p>
-            <p class="text-xs mt-2">Construído com Tailwind CSS, AOS & TypeIt.</p>
+            <p class="text-sm" data-i18n-key="footer.copyright">© 2024 Pedro Henrique Braga. Todos os direitos reservados.</p>
+            <p class="text-xs mt-2" data-i18n-key="footer.builtWith">Construído com Tailwind CSS, AOS & TypeIt.</p>
         </div>
     </footer>
 
@@ -912,24 +914,5 @@
 
     <!-- TypeIt JS Library -->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <script>
-        // Initialize TypeIt for Hero Title
-        document.addEventListener('DOMContentLoaded', function() {
-            const heroTitleElement = document.getElementById('hero-title');
-            if(heroTitleElement){
-                new TypeIt(heroTitleElement, {
-                    strings: ["Olá! Eu sou Pedro Henrique Braga.", "Desenvolvedor Fullstack Pleno.", "Construindo aplicações .NET eficientes.", "Especialista em Backend e Frontend.", "Transformando ideias em código."],
-                    speed: 60,
-                    waitUntilVisible: true,
-                    loop: true,
-                    breakLines: false,
-                    loopDelay: 3500,
-                    deleteSpeed: 40
-                }).go();
-            } else {
-                console.error("Element with ID 'hero-title' not found for TypeIt.");
-            }
-        });
-    </script>
 </body>
 </html>
