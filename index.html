@@ -281,92 +281,56 @@
       <div class="container mx-auto">
           <h2 class="text-3xl font-bold mb-12 md:mb-16 text-center text-primary-800" data-aos="fade-up" data-i18n-key="projects.title">Projetos em Destaque</h2>
           <p class="text-center text-gray-600 mb-12 -mt-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="50" data-i18n-key="projects.description">
-              Aqui estão alguns exemplos de projetos que desenvolvi ou participei. Clique em "Ver Detalhes" para saber mais. **(Nota: Atualize esta seção com seus próprios projetos pessoais ou exemplos de trabalhos profissionais que possa divulgar).**
+              Aqui estão alguns exemplos de projetos que desenvolvi ou participei. Clique em "Ver Detalhes" para saber mais. 
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
 
-              <!-- === PROJECT CARD 1 (FILL WITH YOUR PROJECT) === -->
-              <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 group transform hover:-translate-y-2 hover:rotate-[-1deg]" data-aos="zoom-in-up">
-                  <div class="h-56 overflow-hidden">
-                       <!-- {Replace image URL with your project 1 screenshot} -->
-                      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="{Nome do seu Projeto 1}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
-                  </div>
-                  <div class="p-6">
-                      <!-- {Replace Title with your project 1 title} -->
-                      <h3 class="text-xl font-bold mb-2 text-primary-700" data-i18n-key="projects.card1.title">{Seu Projeto Exemplo 1: App Web .NET}</h3>
-                      <!-- {Replace Description with your project 1 short description} -->
-                      <p class="text-gray-600 mb-4 text-sm leading-relaxed" data-i18n-key="projects.card1.description">{Breve descrição do seu projeto 1. Ex: Sistema de gerenciamento X para resolver o problema Y, utilizando tecnologias Z.}</p>
-                      <!-- {Replace Tech Tags with your project 1 technologies} -->
-                      <div class="flex flex-wrap gap-2 mb-4">
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">.NET Core</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Angular</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">SQL Server</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Azure DevOps</span>
-                      </div>
-                     <a href="javascript:void(0);"
-                             data-modal-target="#project1-modal"
-                             class="open-modal-button text-primary-600 font-medium flex items-center hover:text-primary-800 transition-colors group/link">
-                              <span data-i18n-key="projects.viewDetails">Ver Detalhes</span> <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-                      </a>
-                  </div>
-              </div>
-              <!-- === END PROJECT CARD 1 === -->
+            <!-- === PROJECT CARD: Horus Chatbot === -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 group transform hover:-translate-y-2 hover:rotate-[-1deg]" data-aos="zoom-in-up">
+                <div class="h-56 overflow-hidden">
+                    <img src="images/horus/horus-interaction-ocr.png" alt="Chatbot Horus lendo compromisso de imagem" class="w-full h-full object-cover object-[0%_05%] transition-transform duration-500 group-hover:scale-110"/>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-primary-700" data-i18n-key="projects.horus.title">Horus: Assistente Pessoal com IA (Telegram)</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed" data-i18n-key="projects.horus.description">Chatbot assistente para Telegram capaz de entender linguagem natural e <b>extrair informações de compromissos diretamente de imagens</b> (OCR), além de gerenciar lembretes.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Telegram Bot API</span>
+                        <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">C# / .Net 8</span>
+                        <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">OCR / AI Vision</span> 
+                        <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">NLP</span>
+                    </div>
+                    <a href="javascript:void(0);"
+                            data-modal-target="#horus-modal"
+                            class="open-modal-button text-primary-600 font-medium flex items-center hover:text-primary-800 transition-colors group/link">
+                            <span data-i18n-key="projects.viewDetails">Ver Detalhes</span> <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <!-- === END PROJECT CARD: Horus Chatbot === -->
 
-              <!-- === PROJECT CARD 2 (FILL WITH YOUR PROJECT) === -->
+              <!-- === PROJECT CARD: On-Call System Demo === -->
               <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 group transform hover:-translate-y-2 hover:rotate-[1deg]" data-aos="zoom-in-up" data-aos-delay="100">
-                   <div class="h-56 overflow-hidden">
-                       <!-- {Replace image URL with your project 2 screenshot} -->
-                      <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="{Nome do seu Projeto 2}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
-                  </div>
-                  <div class="p-6">
-                       <!-- {Replace Title with your project 2 title} -->
-                      <h3 class="text-xl font-bold mb-2 text-primary-700" data-i18n-key="projects.card2.title">{Seu Projeto Exemplo 2: Ferramenta Python}</h3>
-                       <!-- {Replace Description with your project 2 short description} -->
-                      <p class="text-gray-600 mb-4 text-sm leading-relaxed" data-i18n-key="projects.card2.description">{Breve descrição do seu projeto 2. Ex: Script de automação para tarefa X ou dashboard de monitoramento Y.}</p>
-                       <!-- {Replace Tech Tags with your project 2 technologies} -->
-                      <div class="flex flex-wrap gap-2 mb-4">
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Python</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Pandas/Flask</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">API Integration</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Docker</span>
-                      </div>
-                       <a href="javascript:void(0);"
-                             data-modal-target="#project2-modal"
-                             class="open-modal-button text-primary-600 font-medium flex items-center hover:text-primary-800 transition-colors group/link">
-                              <span data-i18n-key="projects.viewDetails">Ver Detalhes</span> <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-                          </a>
-                  </div>
-              </div>
-              <!-- === END PROJECT CARD 2 === -->
-
-              <!-- === PROJECT CARD 3 (FILL WITH YOUR PROJECT) === -->
-              <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 group transform hover:-translate-y-2 hover:rotate-[-1deg]" data-aos="zoom-in-up" data-aos-delay="200">
-                  <div class="h-56 overflow-hidden">
-                       <!-- {Replace image URL with your project 3 screenshot} -->
-                      <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="{Nome do seu Projeto 3}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
-                  </div>
-                  <div class="p-6">
-                       <!-- {Replace Title with your project 3 title} -->
-                      <h3 class="text-xl font-bold mb-2 text-primary-700" data-i18n-key="projects.card3.title">{Seu Projeto Exemplo 3: Contribuição Open Source/Estudo}</h3>
-                       <!-- {Replace Description with your project 3 short description} -->
-                      <p class="text-gray-600 mb-4 text-sm leading-relaxed" data-i18n-key="projects.card3.description">{Breve descrição do seu projeto 3. Ex: Estudo de tecnologia X, contribuição para biblioteca Y, ou projeto pessoal Z.}</p>
-                       <!-- {Replace Tech Tags with your project 3 technologies} -->
-                      <div class="flex flex-wrap gap-2 mb-4">
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">React.JS</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Node.js</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">TypeScript</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Git</span>
-                          <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Heroku</span>
-                      </div>
-                       <a href="javascript:void(0);"
-                             data-modal-target="#project3-modal"
-                             class="open-modal-button text-primary-600 font-medium flex items-center hover:text-primary-800 transition-colors group/link">
-                              <span data-i18n-key="projects.viewDetails">Ver Detalhes</span> <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-                          </a>
-                  </div>
-              </div>
-              <!-- === END PROJECT CARD 3 === -->
-
+                <div class="h-56 overflow-hidden bg-gray-100">
+                    <!-- Substitua pelo caminho real do seu screenshot -->
+                   <img src="images/oncall-system/oncall-system-screenshot.png" alt="Interface do Sistema de Controle de Sobreaviso" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"/>
+               </div>
+               <div class="p-6">
+                   <h3 class="text-xl font-bold mb-2 text-primary-700" data-i18n-key="projects.oncall.title">Sistema de Controle de Sobreaviso (UI/UX Demo)</h3>
+                   <p class="text-gray-600 mb-4 text-sm leading-relaxed" data-i18n-key="projects.oncall.description">Demonstração interativa do frontend para um sistema de gerenciamento de escalas, equipes e notificações de sobreaviso, focada na experiência do usuário e design da interface.</p>
+                   <div class="flex flex-wrap gap-2 mb-4">
+                       <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">HTML5</span>
+                       <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">Tailwind CSS</span>
+                       <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">JavaScript</span>
+                       <span class="px-2 py-1 bg-primary-100 text-primary-700 rounded-md text-xs font-medium">UI/UX Design</span>
+                   </div>
+                    <a href="javascript:void(0);"
+                          data-modal-target="#oncall-system-modal"
+                          class="open-modal-button text-primary-600 font-medium flex items-center hover:text-primary-800 transition-colors group/link">
+                           <span data-i18n-key="projects.viewDetails">Ver Detalhes</span> <span class="material-symbols-outlined ml-1 text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                       </a>
+               </div>
+           </div>
+           <!-- === END PROJECT CARD: On-Call System Demo === -->
           </div>
           <div class="text-center mt-12 md:mt-16" data-aos="fade-up">
               <!-- Link to GitHub from CV -->
@@ -380,7 +344,8 @@
     <!-- MODAL STRUCTURES (Initially Hidden - FILL WITH YOUR PROJECT DETAILS) -->
 
 <!-- Modal Projeto 1 -->
-<div id="project1-modal" class="project-modal hidden fixed inset-0 overflow-y-auto" aria-labelledby="project1-modal-title" role="dialog" aria-modal="true">
+
+<div id="horus-modal" class="project-modal hidden fixed inset-0 overflow-y-auto" aria-labelledby="horus-modal-title" role="dialog" aria-modal="true">
     <div class="flex items-end sm:items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
         <!-- Background overlay -->
         <div class="modal-overlay fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
@@ -391,177 +356,200 @@
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div class="sm:flex sm:items-start">
                     <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
-                        <!-- === INÍCIO DO CONTEÚDO DO MODAL 1 (EDITAR!) === -->
+                        <!-- === INÍCIO DO CONTEÚDO DO MODAL HORUS === -->
 
                         <!-- Título e Botão Fechar -->
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl leading-6 font-bold text-primary-800" id="project1-modal-title">
-                                <!-- {NOME DETALHADO DO SEU PROJETO 1 AQUI} -->
-                                {Seu Projeto Exemplo 1: App Web .NET}
+                            <h3 class="text-2xl leading-6 font-bold text-primary-800" id="horus-modal-title" data-i18n-key="projects.horus.modal.title">
+                                Horus: Assistente Pessoal Inteligente (Telegram)
                             </h3>
                             <button type="button" class="modal-close-button text-gray-400 hover:text-gray-600 focus:outline-none">
                                 <span class="material-symbols-outlined text-3xl">close</span>
                             </button>
                         </div>
 
-                        <!-- Imagem Principal ou Carrossel -->
+                        <!-- Imagem Principal ou Vídeo/GIF -->
                         <div class="mb-6">
-                             <!-- {URL DA IMAGEM PRINCIPAL DO SEU PROJETO 1} -->
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Screenshot principal do Projeto 1" class="w-full h-auto rounded-md shadow-md object-cover max-h-96">
-                            <!-- Ou use uma biblioteca de carrossel aqui se tiver várias imagens -->
+                            <img src="images/horus/horus-interaction-ocr.png" alt="Interação com Horus mostrando OCR" class="w-full object-contain transition-transform duration-500 group-hover:scale-105 max-h-96">
+                            <!-- <video class="w-full rounded-md shadow-md" controls autoplay loop muted> <source src="videos/horus-demo.mp4" type="video/mp4"> Seu navegador não suporta vídeos. </video> -->
                         </div>
 
                         <!-- Descrição Detalhada -->
-                         <div class="mb-6 text-gray-700"> {/* Removed prose for default styling */}
-                            <h4 class="text-xl font-semibold text-primary-700 mb-2">Sobre o Projeto</h4>
-                            <p class="mb-3">
-                                <!-- {DESCRIÇÃO DETALHADA DO PROBLEMA/OBJETIVO DO SEU PROJETO 1 AQUI.} -->
-                                (Exemplo: Descreva aqui em detalhes o que o projeto faz, qual problema ele resolve, o contexto em que foi desenvolvido - pessoal, acadêmico, profissional confidencializado, etc.)
-                            </p>
-                            <h4 class="text-xl font-semibold text-primary-700 mb-2">Principais Funcionalidades</h4>
-                            <ul class="list-disc list-inside mb-3 space-y-1">
-                                <!-- {Liste as Funcionalidades Chave do seu Projeto 1} -->
-                                <li>Funcionalidade chave 1.</li>
-                                <li>Funcionalidade chave 2.</li>
-                                <li>Funcionalidade chave 3 (ex: Dashboard interativo).</li>
-                                <li>Funcionalidade chave 4 (ex: Integração com API externa).</li>
-                            </ul>
-                             <h4 class="text-xl font-semibold text-primary-700 mb-2">Desafios e Soluções</h4>
-                            <p class="mb-3">
-                                <!-- {Descreva desafios técnicos e como você os superou no Projeto 1.} -->
-                                (Exemplo: Descreva aqui um ou dois desafios técnicos interessantes que você enfrentou durante o desenvolvimento e como você os solucionou. Ex: otimização de performance, escolha de arquitetura, integração complexa, etc.)
-                            </p>
+                         <div class="mb-6 text-gray-700 space-y-4">
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary-700 mb-2" data-i18n-key="projects.horus.modal.about">Sobre o Projeto</h4>
+                                <p data-i18n-key="projects.horus.modal.about.p1">
+                                    Horus é um projeto pessoal de chatbot para Telegram desenvolvido como um assistente virtual inteligente. O objetivo é simplificar tarefas do dia a dia, oferecendo uma interface conversacional para gerenciamento de compromissos e extração rápida de informações.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary-700 mb-2" data-i18n-key="projects.horus.modal.features">Principais Funcionalidades</h4>
+                                <ul class="list-disc list-inside mb-3 space-y-1">
+                                    <li data-i18n-key="projects.horus.modal.features.f1"><b>Extração de Texto de Imagens (OCR):</b> Capacidade de analisar imagens enviadas (como fotos de notas ou cartões) e extrair informações chave, como datas e horários de compromissos.</li>
+                                    <li data-i18n-key="projects.horus.modal.features.f2"> <b>  Compreensão de Linguagem Natural (NLP):</b> Interage com o usuário de forma mais natural, entendendo pedidos e intenções sem a necessidade estrita de comandos formatados.</li>
+                                    <li data-i18n-key="projects.horus.modal.features.f3"> <b>Gerenciamento de Lembretes:</b> Permite ao usuário solicitar a criação de lembretes para seus compromissos (seja por texto ou extraído da imagem).</li>
+                                    <li data-i18n-key="projects.horus.modal.features.f4"><b> Interface Conversacional no Telegram:</b> Interação direta pela plataforma de mensagens.</li>
+                                </ul>
+                            </div>
+                             <div>
+                                <h4 class="text-xl font-semibold text-primary-700 mb-2" data-i18n-key="projects.horus.modal.challenges">Desafios e Soluções</h4>
+                                <p data-i18n-key="projects.horus.modal.challenges.p1">
+                                    Um dos principais desafios foi garantir a precisão da extração de texto (OCR) de imagens com caligrafia variada. Isso foi abordado utilizando Gemini API e aplicando pós-processamento para validar os formatos de data e hora extraídos. Outro desafio foi gerenciar as conversas de forma eficiente, que foi solucionado com histórico de mensagens no Redis e PostgreSQL.
+                                </p>
+                            </div>
                         </div>
 
                         <!-- Tecnologias Utilizadas -->
                         <div class="mb-6">
-                            <h4 class="text-xl font-semibold text-primary-700 mb-3">Tecnologias Utilizadas</h4>
+                            <h4 class="text-xl font-semibold text-primary-700 mb-3" data-i18n-key="projects.horus.modal.tech">Tecnologias Utilizadas</h4>
                             <div class="flex flex-wrap gap-2">
-                                <!-- {Liste as tecnologias específicas do seu Projeto 1} -->
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">.NET Core / .NET 6+</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">C#</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">ASP.NET Core API</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Angular 12+</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">TypeScript</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Entity Framework Core</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">SQL Server</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Azure DevOps</span>
+                                <!-- AJUSTE AS TECNOLOGIAS CONFORME O SEU PROJETO -->
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Telegram Bot API</span>
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">.Net 8</span> 
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium"> Gemini API</span>
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">PostgreSQL</span>
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Docker</span>
                                 <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Git</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Docker (Opcional)</span>
                             </div>
                         </div>
 
                         <!-- Links Relevantes -->
                         <div class="mt-5">
-                            <h4 class="text-xl font-semibold text-primary-700 mb-3">Links</h4>
+                            <h4 class="text-xl font-semibold text-primary-700 mb-3" data-i18n-key="projects.horus.modal.links">Links</h4>
                             <div class="flex flex-wrap gap-4">
-                                <!-- {LINK DO GITHUB DO SEU PROJETO 1 (se público)} -->
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
-                                    <i class="fa-brands fa-github mr-2"></i> Ver Código no GitHub (se aplicável)
-                                </a>
-                                <!-- {LINK DA DEMO AO VIVO DO SEU PROJETO 1 (se houver)} -->
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
-                                    <span class="material-symbols-outlined mr-2">visibility</span> Ver Demo Ao Vivo (se aplicável)
+                                <a href="https://github.com/pedrohenriquebr/horus" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+                                    <i class="fa-brands fa-github mr-2"></i> <span data-i18n-key="modal.viewCode">Ver Código no GitHub</span>
                                 </a>
                             </div>
+                             <p class="text-xs text-gray-500 mt-2" data-i18n-key="projects.horus.modal.githubNote">(Nota: O repositório contém uma versão simplificada para fins de portfólio, demonstrando a estrutura e integrações principais.)</p>
                         </div>
 
-                        <!-- === FIM DO CONTEÚDO DO MODAL 1 === -->
+                        <!-- === FIM DO CONTEÚDO DO MODAL HORUS === -->
                     </div>
                 </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                 <button type="button" class="modal-close-button mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                 <button type="button" class="modal-close-button mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" data-i18n-key="modal.close">
                     Fechar
                  </button>
             </div>
         </div>
     </div>
 </div>
-<!-- Fim Modal Projeto 1 -->
+<!-- Fim Modal Projeto Horus -->
 
-<!-- Modal Projeto 2 (Copie a estrutura acima e mude o ID e o conteúdo) -->
-<div id="project2-modal" class="project-modal hidden fixed inset-0 overflow-y-auto" aria-labelledby="project2-modal-title" role="dialog" aria-modal="true">
+
+<!-- Modal Projeto On-Call System Demo -->
+<div id="oncall-system-modal" class="project-modal hidden fixed inset-0 overflow-y-auto" aria-labelledby="oncall-system-modal-title" role="dialog" aria-modal="true">
     <div class="flex items-end sm:items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
         <div class="modal-overlay fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">​</span>
-        <div class="modal-content inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-full sm:max-w-3xl md:max-w-4xl">
+        <div class="modal-content inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl">
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                <div class="sm:flex sm:items-start">
                   <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
-                       <!-- === INÍCIO DO CONTEÚDO DO MODAL 2 (EDITAR!) === -->
+                       <!-- === INÍCIO DO CONTEÚDO DO MODAL On-Call System === -->
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-2xl leading-6 font-bold text-primary-800" id="project2-modal-title">
-                                <!-- {NOME DETALHADO DO SEU PROJETO 2 AQUI} -->
-                                {Seu Projeto Exemplo 2: Ferramenta Python}
+                            <h3 class="text-2xl leading-6 font-bold text-primary-800" id="oncall-system-modal-title" data-i18n-key="projects.oncall.modal.title">
+                                Sistema de Controle de Sobreaviso (Demonstração de Frontend)
                             </h3>
                             <button type="button" class="modal-close-button text-gray-400 hover:text-gray-600 focus:outline-none">
                                 <span class="material-symbols-outlined text-3xl">close</span>
                             </button>
                         </div>
-                        <!-- {COLOQUE A IMAGEM, DESCRIÇÃO, FUNCIONALIDADES, DESAFIOS, TECNOLOGIAS E LINKS DO SEU PROJETO 2 AQUI - Use a estrutura do Modal 1 como base} -->
-                         <div class="mb-6">
-                             <!-- {URL DA IMAGEM PRINCIPAL DO SEU PROJETO 2} -->
-                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Screenshot principal do Projeto 2" class="w-full h-auto rounded-md shadow-md object-cover max-h-96">
+                        <!-- Imagem e Link Demo -->
+                         <div class="mb-6 text-center">
+                            <a href="https://pedrohenriquebr.github.io/oncall-system/" target="_blank" rel="noopener noreferrer" class="inline-block border border-gray-300 rounded-md hover:shadow-lg transition-shadow duration-300">
+                                <img src="images/oncall-system/oncall-system-screenshot.png" alt="Interface do Sistema de Sobreaviso - Clique para ver a demo" class="w-full h-auto rounded-md object-cover max-h-[60vh]">
+                            </a>
+                            <a href="https://pedrohenriquebr.github.io/oncall-system/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block px-5 py-2 bg-primary-600 text-white rounded-lg shadow hover:bg-primary-700 transition-colors font-medium">
+                                <span class="material-symbols-outlined mr-2 relative top-1 text-xl">visibility</span> <span data-i18n-key="projects.oncall.modal.viewDemo">Ver Demo Interativa</span>
+                            </a>
                         </div>
-                        <div class="mb-6 text-gray-700">
-                            <h4 class="text-xl font-semibold text-primary-700 mb-2">Sobre o Projeto</h4>
-                             <p class="mb-3">
-                                <!-- {DESCRIÇÃO DETALHADA DO PROBLEMA/OBJETIVO DO SEU PROJETO 2 AQUI.} -->
-                                (Exemplo: Detalhe a ferramenta Python. Foi um script para automação? Um web scraper? Uma API simples com Flask/Django? Um dashboard com Streamlit/Dash? Qual problema resolveu?)
-                            </p>
-                            <h4 class="text-xl font-semibold text-primary-700 mb-2">Principais Funcionalidades/Resultados</h4>
-                             <ul class="list-disc list-inside mb-3 space-y-1">
-                                <!-- {Liste as Funcionalidades Chave/Resultados do seu Projeto 2} -->
-                                <li>Funcionalidade/Resultado 1 (ex: Geração automática de relatórios).</li>
-                                <li>Funcionalidade/Resultado 2 (ex: Monitoramento de métricas X).</li>
-                                <li>Funcionalidade/Resultado 3 (ex: Integração com API Y).</li>
-                            </ul>
-                              <h4 class="text-xl font-semibold text-primary-700 mb-2">Desafios e Soluções</h4>
-                            <p class="mb-3">
-                                <!-- {Descreva desafios técnicos e como você os superou no Projeto 2.} -->
-                                (Exemplo: Descreva desafios específicos do Python ou da tarefa. Manipulação de dados complexos com Pandas? Limitações de API? Performance?)
-                            </p>
-                        </div>
-                         <div class="mb-6">
-                            <h4 class="text-xl font-semibold text-primary-700 mb-3">Tecnologias Utilizadas</h4>
-                            <div class="flex flex-wrap gap-2">
-                                <!-- {Liste as tecnologias específicas do seu Projeto 2} -->
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Python 3</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Pandas / NumPy</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Requests / BeautifulSoup</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Flask / Django / Streamlit (se aplicável)</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Docker (Opcional)</span>
-                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Git</span>
+                        <!-- Descrição Detalhada -->
+                        <div class="mb-6 text-gray-700 space-y-4">
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary-700 mb-2" data-i18n-key="projects.oncall.modal.about">Sobre o Projeto</h4>
+                                <p data-i18n-key="projects.oncall.modal.about.p1">
+                                    Este projeto é uma demonstração do design de interface (UI) e experiência do usuário (UX) para um sistema completo de gerenciamento de sobreaviso. O objetivo é apresentar uma solução visualmente organizada e intuitiva para facilitar a gestão de escalas de plantão, equipes, notificações e histórico de atividades.
+                                </p>
+                                <p data-i18n-key="projects.oncall.modal.about.p2">
+                                    A demo foi construída utilizando HTML, Tailwind CSS e JavaScript puro para simular a navegação e a aparência das diferentes seções da aplicação final planejada.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary-700 mb-2" data-i18n-key="projects.oncall.modal.features">Funcionalidades Visuais Demonstradas</h4>
+                                <ul class="list-disc list-inside mb-3 space-y-1 grid grid-cols-1 md:grid-cols-2 gap-x-4">
+                                    <li data-i18n-key="projects.oncall.modal.features.f1">Layout de Dashboard com cards informativos.</li>
+                                    <li data-i18n-key="projects.oncall.modal.features.f2">Visualização de lista de equipes com busca.</li>
+                                    <li data-i18n-key="projects.oncall.modal.features.f3">Interface de calendário para escalas.</li>
+                                    <li data-i18n-key="projects.oncall.modal.features.f4">Tabela de histórico com paginação.</li>
+                                    <li data-i18n-key="projects.oncall.modal.features.f5">Tela de listagem de notificações.</li>
+                                    <li data-i18n-key="projects.oncall.modal.features.f6">Estrutura de formulários de configurações.</li>
+                                    <li data-i18n-key="projects.oncall.modal.features.f7">Navegação SPA simulada via JavaScript.</li>
+                                    <li data-i18n-key="projects.oncall.modal.features.f8">Design responsivo (Desktop/Mobile).</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-primary-700 mb-2" data-i18n-key="projects.oncall.modal.intendedFeatures">Funcionalidades Planejadas (Aplicação Completa)</h4>
+                                <ul class="list-disc list-inside mb-3 space-y-1">
+                                    <li data-i18n-key="projects.oncall.modal.intendedFeatures.f1">Integração real com Backend (.NET) e Banco de Dados.</li>
+                                    <li data-i18n-key="projects.oncall.modal.intendedFeatures.f2">Atualizações em tempo real (dashboard, status) via SignalR.</li>
+                                    <li data-i18n-key="projects.oncall.modal.intendedFeatures.f3">Lógica complexa de criação e gerenciamento de escalas (regras, trocas).</li>
+                                    <li data-i18n-key="projects.oncall.modal.intendedFeatures.f4">Sistema de notificações multi-canal (Email, Push, SMS - opcional).</li>
+                                    <li data-i18n-key="projects.oncall.modal.intendedFeatures.f5">Autenticação e gerenciamento de permissões de usuários.</li>
+                                    <li data-i18n-key="projects.oncall.modal.intendedFeatures.f6">Integrações com sistemas de monitoramento/alerta.</li>
+                                </ul>
                             </div>
                         </div>
+                        <!-- Tecnologias Utilizadas -->
+                         <div class="mb-6">
+                            <h4 class="text-xl font-semibold text-primary-700 mb-3" data-i18n-key="projects.oncall.modal.techDemo">Tecnologias Utilizadas (Nesta Demo)</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">HTML5</span>
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">CSS3</span>
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Tailwind CSS v3</span>
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">JavaScript (ES6+)</span>
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Material Icons</span>
+                                <span class="px-3 py-1 bg-primary-100 text-primary-800 rounded-full text-sm font-medium">Git</span>
+                            </div>
+                             <h4 class="text-xl font-semibold text-primary-700 mb-3 mt-4" data-i18n-key="projects.oncall.modal.techFull">Tecnologias Planejadas (Aplicação Completa)</h4>
+                             <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">.NET 8 (C#)</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Angular 17+</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">SignalR</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">MediatR</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">CQRS</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">PostgreSQL</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Docker</span>
+                            </div>
+                        </div>
+                        <!-- Links Relevantes -->
                         <div class="mt-5">
-                            <h4 class="text-xl font-semibold text-primary-700 mb-3">Links</h4>
-                             <div class="flex flex-wrap gap-4">
-                                <!-- {LINK DO GITHUB DO SEU PROJETO 2 (se público)} -->
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
-                                    <i class="fa-brands fa-github mr-2"></i> Ver Código no GitHub (se aplicável)
+                            <h4 class="text-xl font-semibold text-primary-700 mb-3" data-i18n-key="projects.oncall.modal.links">Links</h4>
+                             <div class="flex flex-wrap gap-x-6 gap-y-2"> 
+                                <a href="https://pedrohenriquebr.github.io/oncall-system/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+                                    <span class="material-symbols-outlined mr-2">visibility</span> <span data-i18n-key="projects.oncall.modal.demoLink">Ver Demo Interativa</span>
                                 </a>
-                                <!-- {LINK DA DEMO AO VIVO OU EXPLICAÇÃO DO SEU PROJETO 2 (se houver)} -->
-                                <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
-                                    <span class="material-symbols-outlined mr-2">visibility</span> Ver Demo / Explicação (se aplicável)
-                                </a> -->
+                                <a href="https://github.com/pedrohenriquebr/oncall-system" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-800 font-medium inline-flex items-center">
+                                    <i class="fa-brands fa-github mr-2"></i> <span data-i18n-key="projects.oncall.modal.githubLink">Ver Código no GitHub</span>
+                                </a>
                             </div>
                         </div>
 
-                       <!-- === FIM DO CONTEÚDO DO MODAL 2 === -->
+                       <!-- === FIM DO CONTEÚDO DO MODAL On-Call System === -->
                   </div>
                </div>
             </div>
              <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                 <button type="button" class="modal-close-button mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                 <button type="button" class="modal-close-button mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" data-i18n-key="modal.close">
                     Fechar
                  </button>
             </div>
         </div>
     </div>
 </div>
-<!-- Fim Modal Projeto 2 -->
+<!-- Fim Modal Projeto On-Call System Demo -->
 
 <!-- Modal Projeto 3 (Copie a estrutura acima e mude o ID e o conteúdo) -->
 <div id="project3-modal" class="project-modal hidden fixed inset-0 overflow-y-auto" aria-labelledby="project3-modal-title" role="dialog" aria-modal="true">

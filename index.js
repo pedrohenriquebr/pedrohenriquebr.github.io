@@ -160,6 +160,12 @@ document.addEventListener('DOMContentLoaded', function () {
         elementsToTranslate.forEach(element => {
             const key = element.dataset.i18nKey;
             const targetAttribute = element.dataset.i18nTargetAttr;
+
+            if(!Object.keys(translations).includes(key)) {
+                console.warn(`Translation key "${key}" not found in the provided translations.`);
+                return;
+            }
+
             if (lang === 'en' && translations[key]) {
                 const translation = translations[key];
                 if (targetAttribute) {
@@ -169,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         console.warn(`Element with key "${key}" does not have attribute "${targetAttribute}".`);
                     }
                 } else {
-                    element.textContent = translation;
+                    element.innerHTML = translation;
                 }
             }
         });
